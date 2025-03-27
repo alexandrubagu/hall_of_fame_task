@@ -1,29 +1,20 @@
 # Hall of Fame Feature Design Homework
 
 ## Objective
-To design and implement a "Hall of Fame" feature that tracks the highest wins in the following time frames: **All-time**, **Monthly**, **Weekly**, and **Daily** for both **games** and **users**.
-
-- **Hall of Fame for Users**: Displayed prominently on the main page, showcasing the top-performing players across all games.
-- **Hall of Fame for Games**: Displayed as a widget on each game's detail page, showing the highest wins specific to that game.
+To design and implement a "Hall of Fame" feature that tracks the top 100 highest wins in the following time frames: **All-time**, **Monthly**, **Weekly**, and **Daily**.
 
 ---
 
 ## Examples:
 
-#### All-time Top Wins For A Specific Game
-| Rank | Game Title      | Total Wins Amount | Top User        |
-|------|-----------------|-------------------|-----------------|
-| 1    | Game A          | 10000.00          | User X          |
-| 2    | Game A          | 8000.00           | User Y          |
-| 3    | Game A          | 7500.00           | User Z          |
-
-#### All-time Top Wins For All Users
+#### All-time 
 | Rank | Game Title      | Total Wins Amount | Top User        |
 |------|-----------------|-------------------|-----------------|
 | 1    | Game A          | 10000.00          | User X          |
 | 2    | Game B          | 8000.00           | User Y          |
 | 3    | Game C          | 7500.00           | User Z          |
-
+|      |                 |                   |                 |
+| 100  | Game C          | 7500.00           | User Z          |
 
 ---
 
@@ -55,19 +46,6 @@ Represents wins made by users during gameplay.
 | `session_id`  | Foreign Key | Links the win to a session.      |
 | `inserted_at` | DateTime    | When the win was recorded.       |
 | `updated_at`  | DateTime    | When the win was last updated.   |
-
----
-
-### 3. **Sessions**
-Represents gameplay sessions for users.
-
-| Column        | Type        | Description                       |
-|---------------|-------------|-----------------------------------|
-| `id`          | Primary Key | Unique identifier for the session. |
-| `user_id`     | Foreign Key | Links the session to a user.     |
-| `game_id`     | Foreign Key | Links the session to a game.     |
-| `inserted_at` | DateTime    | When the session started.        |
-| `updated_at`  | DateTime    | When the session was last updated. |
 
 ---
 
