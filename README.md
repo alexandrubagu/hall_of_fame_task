@@ -13,7 +13,7 @@ To design and implement a "Hall of Fame" feature that tracks the top 100 highest
 | 1    | Game A          | 10000.00          | User X          |
 | 2    | Game B          | 8000.00           | User Y          |
 | 3    | Game C          | 7500.00           | User Z          |
-|      |                 |                   |                 |
+| .    | .               | .                 | .               |
 | 100  | Game C          | 7500.00           | User Z          |
 
 ---
