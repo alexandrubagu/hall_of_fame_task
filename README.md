@@ -1,20 +1,14 @@
 # Hall of Fame Feature Design Homework
 
 ## Objective
-To design and implement a "Hall of Fame" feature that tracks the top 100 highest wins in the following time frames: **All-time**, **Monthly**, **Weekly**, and **Daily**.
+To design and implement a "Hall of Fame" widget that tracks the top 10 highest wins for the following time frames: **All-time**, **Monthly**, **Weekly**, and **Daily**.
 
 ---
 
 ## Examples:
 
-#### All-time 
-| Rank | Game Title      | Total Wins Amount | Top User        |
-|------|-----------------|-------------------|-----------------|
-| 1    | Game A          | 10000.00          | User X          |
-| 2    | Game B          | 8000.00           | User Y          |
-| 3    | Game C          | 7500.00           | User Z          |
-| .    | .               | .                 | .               |
-| 100  | Game C          | 7500.00           | User Z          |
+![2025-03-27_14-21](https://github.com/user-attachments/assets/beca0e1b-c73e-48a9-b797-e774994da658)
+
 
 ---
 
@@ -63,21 +57,6 @@ Represents games available in the system.
 | `themes`      | String      | Themes associated with the game. |
 | `inserted_at` | DateTime    | When the game was created.       |
 | `updated_at`  | DateTime    | When the game was last updated.  |
-
----
-
-### 5. **Bets**
-Represents bets placed by users.
-
-| Column        | Type        | Description                       |
-|---------------|-------------|-----------------------------------|
-| `id`          | Primary Key | Unique identifier for the bet.   |
-| `amount`      | Decimal     | The amount of the bet.           |
-| `user_id`     | Foreign Key | Links the bet to a user.         |
-| `game_id`     | Foreign Key | Links the bet to a game.         |
-| `session_id`  | Foreign Key | Links the bet to a session.      |
-| `inserted_at` | DateTime    | When the bet was placed.         |
-| `updated_at`  | DateTime    | When the bet was last updated.   |
 
 ---
 
