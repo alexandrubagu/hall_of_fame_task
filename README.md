@@ -13,7 +13,7 @@
 * The leaderboard should update in real-time when a new win is recorded.
 * The system should handle win retrieval efficiently to avoid performance bottlenecks.
 
-Non-Functional Requirements
+## Non-Functional Requirements
 * The system should be highly available to ensure that the leaderboard is always accessible.
 * Query performance should be optimized using indexes and caching for frequent leaderboard queries.
 * The data aggregation should be efficient to avoid slow queries, especially for real-time updates.
