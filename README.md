@@ -1,14 +1,8 @@
-# Hall of Fame Feature Design Homework
-
-## Objective
-To design and implement a "Hall of Fame" widget that tracks the top 10 highest wins for the following time frames: **All-time**, **Monthly**, **Weekly**, and **Daily**.
-
----
+# Hall of Fame Feature - Design Homework
 
 ## Examples:
 
 ![2025-03-27_14-21](https://github.com/user-attachments/assets/beca0e1b-c73e-48a9-b797-e774994da658)
-
 
 ---
 ## Functional Requirements
@@ -26,11 +20,3 @@ Non-Functional Requirements
 * The solution should scale well with increasing numbers of users and wins.
 * Data should be stored and retrieved efficiently, considering partitioning if needed for large datasets.
 ---
-
-## Evaluation Criteria
-
-- **Correctness**: Does the solution meet the requirements?
-- **Performance**: Are the queries efficient?
-- **Code Quality**: Is the code clean, modular, and maintainable?
-- **Scalability**: Can the solution handle a growing dataset?
-- **Documentation**: Is the solution well-documented?
