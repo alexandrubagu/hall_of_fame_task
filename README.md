@@ -1,6 +1,6 @@
 # Hall of Fame Feature - Design Homework
 
-## Examples:
+## Example:
 
 ![2025-03-27_14-21](https://github.com/user-attachments/assets/beca0e1b-c73e-48a9-b797-e774994da658)
 
