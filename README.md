@@ -7,7 +7,7 @@
 ---
 ## Functional Requirements
 
-* The system should track the top 10 highest wins for different timeframes: All-time, Monthly, Weekly, and Daily.
+* The system should track the top 10 highest wins for different timeframes: All-time, Monthly and Daily.
 * A Hall of Fame widget should be available to display the leaderboard.
 * Users should be able to see the game title, username, and win amount for each entry.
 * The leaderboard should update in real-time when a new win is recorded.
