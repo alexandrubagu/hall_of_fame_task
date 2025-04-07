@@ -11,53 +11,20 @@ To design and implement a "Hall of Fame" widget that tracks the top 10 highest w
 
 
 ---
+## Functional Requirements
 
-## Tables Overview
+* The system should track the top 10 highest wins for different timeframes: All-time, Monthly, Weekly, and Daily.
+* A Hall of Fame widget should be available to display the leaderboard.
+* Users should be able to see the game title, username, and win amount for each entry.
+* The leaderboard should update in real-time when a new win is recorded.
+* The system should handle win retrieval efficiently to avoid performance bottlenecks.
 
-### 1. **Users**
-Represents the players in the system.
-
-| Column        | Type        | Description                       |
-|---------------|-------------|-----------------------------------|
-| `id`          | Primary Key | Unique identifier for the user.  |
-| `name`        | String      | Name of the user.                |
-| `email`       | String      | Email address of the user.       |
-| `inserted_at` | DateTime    | When the user was created.       |
-| `updated_at`  | DateTime    | When the user was last updated.  |
-
----
-
-### 2. **Wins**
-Represents wins made by users during gameplay.
-
-| Column        | Type        | Description                       |
-|---------------|-------------|-----------------------------------|
-| `id`          | Primary Key | Unique identifier for the win.   |
-| `amount`      | Decimal     | The amount won.                  |
-| `user_id`     | Foreign Key | Links the win to a user.         |
-| `game_id`     | Foreign Key | Links the win to a game.         |
-| `bet_id`      | Foreign Key | Links the win to a bet.          |
-| `session_id`  | Foreign Key | Links the win to a session.      |
-| `inserted_at` | DateTime    | When the win was recorded.       |
-| `updated_at`  | DateTime    | When the win was last updated.   |
-
----
-
-### 4. **Games**
-Represents games available in the system.
-
-| Column        | Type        | Description                       |
-|---------------|-------------|-----------------------------------|
-| `id`          | Primary Key | Unique identifier for the game.  |
-| `title`       | String      | The title of the game.           |
-| `rtp`         | Decimal     | Return to player percentage.     |
-| `status`      | String      | The status of the game (e.g., active/inactive). |
-| `media`       | String      | Media URL for the game.          |
-| `slug`        | String      | Slug for identifying the game.   |
-| `themes`      | String      | Themes associated with the game. |
-| `inserted_at` | DateTime    | When the game was created.       |
-| `updated_at`  | DateTime    | When the game was last updated.  |
-
+Non-Functional Requirements
+* The system should be highly available to ensure that the leaderboard is always accessible.
+* Query performance should be optimized using indexes and caching for frequent leaderboard queries.
+* The data aggregation should be efficient to avoid slow queries, especially for real-time updates.
+* The solution should scale well with increasing numbers of users and wins.
+* Data should be stored and retrieved efficiently, considering partitioning if needed for large datasets.
 ---
 
 ## Evaluation Criteria
